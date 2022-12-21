@@ -1,0 +1,40 @@
+
+.uczen {
+    color: black;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: small;
+    width:200px;
+}
+
+.green{
+    background-color: green;
+}
+.red{
+    background-color: red;
+}
+
+.tytul {
+    font-weight: 700;
+    color: black;
+    width: 110px;
+    text-transform: uppercase;
+    font-size: small;
+}
+.zajecia-dodatkowe{
+    width:200px
+}
+.dod{
+    width: 200px;
+}
+
+
+
+
+input {
+    width: 102px;
+}
+span {
+    display:inline-block;
+    width:200px; /*procenty piksele cokolwiek innego */
+    }

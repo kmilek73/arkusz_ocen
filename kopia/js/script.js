@@ -37,30 +37,30 @@ const ObliczSrednia = () => {
         let pF = parseFloat(ocena_fizyka);
         let pC = parseFloat(ocena_chemia);
         let pInf = parseFloat(ocena_informatyka);
-        if (zajecia_dodatkowe.includes("polski") && pP != 6) {
+        if (zajecia_dodatkowe == "polski") {
             pPN = (pP + 0.5);
         } else { pPN = pP }
-        if (zajecia_dodatkowe.includes("fizyka") && pF != 6) {
+        if (zajecia_dodatkowe == "fizyka") {
             pFN = (pF + 0.5);
         } else { pFN = pF }
-        if (zajecia_dodatkowe.includes("matematyka") && pM != 6) {
+        if (zajecia_dodatkowe == "matematyka") {
             pMN = (pM + 0.5);
         } else { pMN = pM }
-        if (zajecia_dodatkowe.includes("biologia") && pB != 6) {
+        if (zajecia_dodatkowe == "biologia") {
             pBN = (pB + 0.5);
         } else { pBN = pB }
-        if (zajecia_dodatkowe.includes("chemia") && pC != 6) {
+        if (zajecia_dodatkowe == "chemia") {
             pCN = (pC + 0.5);
         } else { pCN = pC }
-        if (zajecia_dodatkowe.includes("informatyka") && pInf != 6) {
+        if (zajecia_dodatkowe == "informatyka") {
             pInfN = (pInf + 0.5);
         } else { pInfN = pInf }
-        if (zajecia_dodatkowe.includes("geografia") && pG != 6) {
+        if (zajecia_dodatkowe == "geografia") {
             pGN = (pG + 0.5);
         } else { pGN = pG }
 
 
-        if (pP == 1 || pM == 1 || pB == 1 || pG == 1 || pF == 1 || pC== 1 || pInf == 1) {
+        if (pP == 1 || pM == 1 || pB == 1 || pG == 1 || pF == 1 || pC == 1 || pInf == 1) {
             let zmienTlo = getUczniowie.querySelector('.uczen'); //pobranie clasy uczeń
             zmienTlo.classList.add('red'); //dodanie clasy green do pola red
         }
